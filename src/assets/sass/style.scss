@@ -1,0 +1,11 @@
+@import './blocks/vars.scss';
+
+body {
+    margin: 0;
+    background-color: $gray;
+}
+
+/* blocks */
+
+@import './blocks/header.scss';
+@import './blocks/btn.scss';

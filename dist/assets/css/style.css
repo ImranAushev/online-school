@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: #d7dbd9;
+}
+
+/* blocks */
+.header {
+    background-color: #069952;
+}
+
+.header--fixed {
+    background-color: #a31a1f;
+}
+
+.header__btn {
+    margin: 10px;
+    background-color: #069952;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header__btn:hover {
+    background-color: #1cd97e;
+}
+
+.header--fixed .header__btn {
+    background-color: #a31a1f;
+}
