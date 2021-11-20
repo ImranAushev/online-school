@@ -1,6 +1,14 @@
+html {
+    font-size: 15px;
+}
+
 body {
     margin: 0;
-    background-color: #d7dbd9;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fafafa;
 }
 
 /* blocks */

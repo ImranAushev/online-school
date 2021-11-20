@@ -1,9 +1,25 @@
 @import './blocks/vars.scss';
 
+html {
+    font-size: 15px;
+}
+
 body {
     margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    color: $black;
+    font-size: 1rem;
+    line-height: 1.5;
     background-color: $gray;
 }
+
+// *,
+// *:before,
+// *:after {
+//     box-sizing: border-box;
+// }
+
 
 /* blocks */
 
