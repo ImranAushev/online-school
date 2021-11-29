@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    height: 100vh;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     color: #000;
@@ -11,15 +12,19 @@ body {
     background-color: #fafafa;
 }
 
+.content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.row {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+}
+
 /* blocks */
-.header {
-    background-color: #069952;
-}
-
-.header--fixed {
-    background-color: #a31a1f;
-}
-
 .header__btn {
     margin: 10px;
     background-color: #069952;
@@ -39,4 +44,26 @@ body {
 
 .social__icon {
     fill: #aaaaaa;
+}
+
+.header {
+    background-color: #069952;
+}
+
+.header--fixed {
+    background-color: #a31a1f;
+}
+
+.main {
+    flex: 1 1 auto;
+    background-color: #1a0a72;
+}
+
+.footer {
+    background-color: #000;
+}
+
+.page_service {
+    flex: 1 1 auto;
+    background-color: #1a0a72;
 }
