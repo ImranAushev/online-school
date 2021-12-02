@@ -1,9 +1,9 @@
-.header__btn {
-    margin: 10px;
-    background-color: $green_dark;
-    color: $black;
-    padding: 10px;
-    border-radius: 10px;
+.mn-header__btn {
+    margin: 0;
+    // background-color: $green_dark;
+    // color: $black;
+    // padding: 0;
+    // border-radius: 10px;
     cursor: pointer;
     &:hover {
         background-color: $green_light;

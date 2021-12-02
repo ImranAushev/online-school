@@ -1,0 +1,39 @@
+.mn-header__block_menu {
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: $gray_dark;
+
+}
+
+.mn-header__block_menu_list {
+    display: flex;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    @media (max-width: 767px) {
+        display: block;
+
+        text-align: right;
+    }
+}
+
+.mn-header__block_menu_item {
+    margin: 0 3rem 0 0;
+}
+
+.mn-header__block_menu_item a {
+    text-decoration: none;
+
+    color: $gray_dark;
+    cursor: pointer;
+}
+
+.mn-header__user a {
+    text-transform: uppercase;
+    font-size: .9rem;
+}

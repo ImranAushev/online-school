@@ -1,7 +1,18 @@
-.header {
-    background-color: $green_dark;
+.mn-header__row {
+    display: flex;
+    justify-content: space-between;
 
-    &--fixed {
-        background-color: $red;
+    min-height: 4.5rem;
+
+    @media (max-width: 767px) {
+        min-height: 3rem;
     }
+}
+
+.mn-header__block {
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $while;
 }

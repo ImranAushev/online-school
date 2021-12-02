@@ -1,0 +1,22 @@
+.mn-header__block_logo_and_cources {
+    display: flex;
+    justify-content: inherit;
+}
+
+.mn-header__logo {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+
+    font-weight: 500;
+    color: $gray_dark;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.mn-header__btn {
+    color: $gray_dark;
+    font-size: 1.2rem;
+
+    cursor: pointer;
+}

@@ -1,0 +1,68 @@
+@media (max-width: 767px) {
+    .mn-header__burger {
+        display: flex;
+        justify-content: flex-end;
+
+        position: relative;
+
+        padding: 0 1.4rem 0 0;
+    }
+// рисуем бургер
+    .mn-header__burger span {
+        position: absolute;
+        width: 1.5rem;
+        height: 2px;
+
+        background-color: $brown;
+    }
+
+    .mn-header__burger:before,
+    .mn-header__burger:after {
+        content: '';
+        position: absolute;
+
+        background-color: $brown;
+
+        width: 1.5rem;
+        height: 2px;
+    }
+
+    .mn-header__burger:before {
+        top: 1.9rem;
+    }
+
+    .mn-header__burger:after {
+        bottom: 1.9rem;
+    }
+
+//меню для бургера
+    .mn-header__block_menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 90%;
+
+        background-color: $gray;
+    }
+// показывваем кнопку "все курсы"
+    .mn-header__block_logo_and_cources {
+        justify-content: flex-start;
+
+        position: relative;
+        z-index: 1;
+    }
+// показываем бургер
+    .mn-header__burger {
+        position: relative;
+        z-index: 1;
+    }
+// add отступы для спска
+    .mn-header__block_menu_list li {
+        margin: .6rem 1.4rem .6rem;
+    }
+
+    .mn-header__logo {
+        padding: 0 2rem 0 1rem;
+    }
+}
