@@ -1,4 +1,8 @@
 @media (max-width: 767px) {
+    body.lock {
+        overflow-y: hidden;
+    }
+    
     .mn-header__burger {
         display: flex;
         justify-content: flex-end;
@@ -14,6 +18,8 @@
         height: 2px;
 
         background-color: $brown;
+
+        transition: all 0.3s ease 0s;
     }
 
     .mn-header__burger:before,
@@ -25,6 +31,8 @@
 
         width: 1.5rem;
         height: 2px;
+
+        transition: all 0.3s ease 0s;
     }
 
     .mn-header__burger:before {
@@ -35,13 +43,37 @@
         bottom: 1.9rem;
     }
 
+    .mn-header__burger.active:before {
+        transform: rotate(45deg);
+        top: 22px;
+    }
+
+    .mn-header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 21px;
+    }
+
+    .mn-header__burger.active span {
+        transform: scale(0);
+    }
 //меню для бургера
     .mn-header__block_menu {
         position: absolute;
         right: 0;
+        top: -100px;
+        width: 100%;
+
+        background-color: $gray;
+
+        transition: all 0.4s ease 0s;
+    }
+
+    .mn-header__block_menu.active {
+        position: absolute;
+        right: 0;
         top: 0;
         width: 100%;
-        height: 90%;
+        height: 40%;
 
         background-color: $gray;
     }
