@@ -11,7 +11,7 @@ const cssnano = require("gulp-cssnano");
 const rigger = require("gulp-rigger"); // склеивает файлы
 const uglify = require("gulp-uglify"); // сжатие js файла
 const plumber = require("gulp-plumber"); // пропускает незначительные ошибки
-// const imagemin = import("gulp-imagemin"); // сжатие изображения
+const imagemin = require("gulp-imagemin"); // сжатие изображения
 const del = require("del"); // очищать папку
 const panini = require('panini'); // создавать шаблоны
 const browsersync = require("browser-sync").create(); // локальный сервер 
@@ -108,12 +108,12 @@ function js() {
         .pipe(browsersync.stream());
 }
 
-// function images() {
-//     return src(path.src.images)
-//         .pipe(imagemin())
-//         .pipe(dest(path.build.images));
-// }
-//
+function images() {
+    return src(path.src.images)
+        .pipe(imagemin())
+        .pipe(dest(path.build.images));
+}
+
 
 
 function clean() {
@@ -124,10 +124,10 @@ function watchFiles() {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
     gulp.watch([path.watch.js], js);
-    // gulp.watch([path.watch.images], images);
+    gulp.watch([path.watch.images], images);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js /*images*/ ));
+const build = gulp.series(clean, gulp.parallel(html, css, js, images));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 
@@ -136,7 +136,7 @@ const watch = gulp.parallel(build, watchFiles, browserSync);
 exports.html = html;
 exports.css = css;
 exports.js = js;
-// exports.images = images;
+exports.images = images;
 exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
