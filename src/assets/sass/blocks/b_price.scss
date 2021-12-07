@@ -1,0 +1,60 @@
+.price__header {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    
+    margin-bottom: 1.5rem;
+}
+
+.price__list {
+    display: flex;
+    justify-content: flex-start;
+
+    @media (max-width: 433px) {
+        display: block;
+    }
+}
+
+.price__item {
+    padding: 0 1rem;
+
+    @media (max-width: 433px) {
+        padding: 0;
+    }
+}
+
+.price__item--old {
+    color: #c3c2be;
+    text-decoration: line-through;
+}
+
+.price__data {
+    order: 2;
+
+    @media (max-width: 768px) {
+        order: 1;
+    }
+}
+
+.price__title {
+    order: 1;
+
+    @media (max-width: 768px) {
+        order: 2;
+    }
+}
+
+.p-1 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 600;
+
+}
+
+.t-1 {
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    white-space: nowrap;
+}

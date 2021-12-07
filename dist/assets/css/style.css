@@ -15,9 +15,14 @@ body {
 }
 
 .row {
-    height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 /* blocks */
@@ -59,6 +64,116 @@ body {
 
 .main {
     flex: 1 1 auto;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.fs {
+    padding: 0 1rem;
+}
+
+.fs__top_content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 560px) {
+    .fs__top_content {
+        display: block;
+        padding: 0;
+    }
+}
+
+.fs__blocks {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+@media (max-width: 560px) {
+    .fs__blocks {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+}
+
+.fs__h1 {
+    line-height: 1.3;
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.name__school {
+    color: #0d6efd;
+}
+
+.fs__text {
+    flex: 1 1 auto;
+}
+
+@media (max-width: 560px) {
+    .fs__text {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .fs__directions {
+        display: none;
+    }
+}
+
+.fs__picture {
+    width: 40%;
+}
+
+@media (max-width: 560px) {
+    .fs__picture {
+        width: 100%;
+    }
+}
+
+.fs__picture img {
+    width: 80%;
+    height: 80%;
+    padding: 0 1rem 0 2rem;
+}
+
+@media (max-width: 560px) {
+    .fs__picture img {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.fs__bottom_content {
+    border-bottom: 1px solid #e2e2e2;
+    text-align: left;
+}
+
+@media (max-width: 560px) {
+    .fs__bottom_content {
+        text-align: center;
+    }
+}
+
+.fs__bottom_text {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #0d6efd;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #000;
+}
+
+.fs__bottom_text:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #0d6efd;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .footer {
@@ -212,7 +327,122 @@ body {
     font-size: 0.9rem;
 }
 
+.fs__list {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.fs__item {
+    padding: 1rem 1rem;
+}
+
+.fs__item a {
+    font-family: "Arial", "Montserrat" serif;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.price_and_form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .price_and_form {
+        flex-wrap: wrap;
+    }
+}
+
+.price-col {
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    .price-col {
+        flex-wrap: wrap;
+        width: 70%;
+    }
+}
+
+.price_and_form {
+    background-color: #0d6efd;
+    border-radius: 1.5rem;
+}
+
+.price__header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.price__list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 433px) {
+    .price__list {
+        display: block;
+    }
+}
+
+.price__item {
+    padding: 0 1rem;
+}
+
+@media (max-width: 433px) {
+    .price__item {
+        padding: 0;
+    }
+}
+
+.price__item--old {
+    color: #c3c2be;
+    text-decoration: line-through;
+}
+
+.price__data {
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    .price__data {
+        order: 1;
+    }
+}
+
+.price__title {
+    order: 1;
+}
+
+@media (max-width: 768px) {
+    .price__title {
+        order: 2;
+    }
+}
+
+.p-1 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 600;
+}
+
+.t-1 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
 .page_service {
     flex: 1 1 auto;
-    background-color: #1a0a72;
+    background-color: #0d6efd;
 }

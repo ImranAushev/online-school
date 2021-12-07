@@ -1,3 +1,111 @@
 .main {
     flex: 1 1 auto;
+
+    overflow: hidden;
+
+    margin: 2rem 0;
+}
+
+.fs {
+    padding: 0 1rem;
+}
+
+.fs__top_content {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    @media (max-width: 560px) {
+        display: block;
+
+        padding: 0;
+    }
+}
+
+.fs__blocks {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+
+    @media (max-width: 560px) {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+}
+
+.fs__h1 {
+    line-height: 1.3;
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.name__school {
+    color: $blue;
+}
+
+.fs__text {
+    flex: 1 1 auto;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
+    
+}
+.fs__directions {
+    @media (max-width: 560px) {
+        display: none;
+    }
+}
+
+.fs__picture {
+    width: 40%;
+
+    @media (max-width: 560px) {
+        width: 100%;
+    }
+}
+
+.fs__picture img {
+    width: 80%;
+    height: 80%;
+
+    padding: 0 1rem 0 2rem;
+
+    @media (max-width: 560px) {
+        padding: 0;
+
+        width: 100%;
+    }
+}
+
+.fs__bottom_content {
+    border-bottom: 1px solid $gray;
+
+    text-align: left;
+
+    @media (max-width: 560px) {
+        text-align: center;
+    }
+}
+
+.fs__bottom_text {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: $blue;
+
+    margin-bottom: 2rem;
+
+    border-bottom: 1px solid $black;
+}
+
+.fs__bottom_text:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: $blue;
+    display: inline-block;
+    border-radius: 50%;
 }
