@@ -11,6 +11,8 @@
     display: flex;
     justify-content: flex-start;
 
+    margin-bottom: 2rem;
+
     @media (max-width: 433px) {
         display: block;
     }
@@ -57,4 +59,27 @@
     font-size: 1.2rem;
 
     white-space: nowrap;
+}
+
+.price__cource_discounts{
+    padding: 0 1rem;
+    line-height: 2.3rem;
+}
+
+.price__cource {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.price__text {
+    color: $red;
+}
+
+.percent {
+    font-size: 1.3rem;
+}
+
+.price__mount {
+    text-transform: uppercase;
+    color: $gray_dark;
 }

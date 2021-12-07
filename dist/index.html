@@ -106,7 +106,7 @@
                 
                         <div class="fs__bottom_content">
                             <div class="fs__bottom_text">
-                                Более 4000 учеников успешно прошли курсы
+                                Более 4000 учеников успешно прошли обучение
                             </div>
                         </div>
                 
@@ -137,10 +137,50 @@
                                 </li>
                             </ul>
                 
+                            <div class="price__cource_discounts">
+                                <div class="price__cource">
+                                    Frontend - разработчик: начните карьеру в IT
+                                </div>
+                                <div class="price__text">
+                                    В течении этй недели действуют скидки до <span class="percent">30%</span>
+                                </div>
+                                <div class="price__duration">
+                                    <span class="price__mount">Длительность:</span></br>
+                                    
+                                </div> 
+                            </div>
+                
                         </div>
                 
                         <div class="price_and_form__form  form_block  price-col">
-                            <h3>Записаться на курс или получить бесплатную консультацию</h3>
+                            <h3 class="form_block__title">Записаться на курс или получить бесплатную консультацию</h3>
+                            <form class="form_block__form" action="#" method="post" enctype="multipart/form-data">
+                                <ul class="form_block__list">
+                                    <li class="form_block__item">
+                                        <label class="form_label  form_label--name" for="user-name">Имя:</label>
+                                        <input class="form_input" type="text" name="name" required id="user-name" pattern="^[\sA-Za-zА-Яа-яЁё]{2,}$" tabindex="1">
+                                        <span class="form_error"></span>
+                                    </li>
+                                    <li class="form_block__item">
+                                        <label class="form_label  form_label--phone" for="user-phone">Телефон:</label>
+                                        <input class="form_input" 
+                                        type="tel" name="phone" required 
+                                        id="user-phone" 
+                                        pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})"
+                                        placeholder="+_(___)___-__-__" 
+                                        tabindex="2">
+                                    </li>
+                                    <li class="form_block__item">
+                                        <label class="form_label  form_label--email" for="user-email">Почта:</label>
+                                        <input class="form_input" type="email" name="email" required id="user-email" tabindex="3" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Zа-яА-ЯёЁ0-9]+\.[a-zA-Zа-яА-ЯёЁ]{2,}$">
+                                    </li>
+                                </ul>
+                                <div class="form_block_btn_and_text">
+                                    <button class="form_btn" type="submit">Записаться</button>
+                                    <p class="text">Нажав на кнпку Вы соглашаетесь с <a href="#">политикой конфидициальности</a> и <a href="#">правилами использования платформы</a></a></p>
+                                </div>
+                            </form>
+                        
                         </div>
                 
                     </section>
