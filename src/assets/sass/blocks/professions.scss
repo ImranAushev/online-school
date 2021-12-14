@@ -1,0 +1,96 @@
+.professions__block {
+    padding: 1rem;
+}
+
+.professions__block-top {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.professions__block-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.professions__col-left {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 50%;
+
+    @media (max-width: 768px) {
+        display: block;
+
+        // flex-wrap: nowrap;
+
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.professions__col-rigth {
+    width: 50%;
+
+    @media (max-width: 768px) {
+        display: block;
+
+        width: 80%;
+        margin: 0 auto;
+
+        text-align: center;
+
+        font-size: 1.1rem;
+    }
+}
+
+.col_img {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.no_text {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.professions__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.p__item {
+    border: 1px solid $blue;
+    padding: 3rem 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+
+    box-shadow: 5px 4px 4px 1px rgba(0, 0, 0, 0.2);
+
+    flex: 0 1 30%;
+
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2rem 1rem;
+    }
+}
+
+.p__img {
+    width: 80%;
+}
+

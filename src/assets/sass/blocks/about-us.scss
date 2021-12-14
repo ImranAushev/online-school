@@ -1,0 +1,26 @@
+.about-us {
+    background-color: $green_light;
+    
+    padding: 0 1rem;
+}
+
+.about-us__title {
+    margin: 1rem 0;
+    padding: 1rem 0;
+
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about-us_name {
+    font-size: 1.5rem;
+}
+
+.about-us_bottom {
+    text-align: center;
+
+    .about-us_bottom_t {
+        border-bottom: none;
+    }
+}

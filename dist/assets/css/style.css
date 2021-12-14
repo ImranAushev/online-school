@@ -32,7 +32,7 @@ ul {
 }
 
 .mn-header__btn:hover {
-    background-color: #1cd97e;
+    background-color: #dfdfdf;
 }
 
 .header--fixed .mn-header__btn {
@@ -164,7 +164,6 @@ ul {
     font-weight: normal;
     color: #0d6efd;
     margin-bottom: 2rem;
-    border-bottom: 1px solid #000;
 }
 
 .fs__bottom_text:before {
@@ -174,10 +173,6 @@ ul {
     background-color: #0d6efd;
     display: inline-block;
     border-radius: 50%;
-}
-
-.footer {
-    background-color: #000;
 }
 
 .mn-header__block_logo_and_cources {
@@ -340,7 +335,7 @@ ul {
 .fs__item a {
     font-family: "Arial", "Montserrat" serif;
     font-weight: 500;
-    color: #000;
+    color: #242424;
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -372,9 +367,8 @@ ul {
     }
 }
 
-.price_and_form {
+.p_form {
     background-color: #0d6efd;
-    border-radius: 1.5rem;
 }
 
 .price__header {
@@ -542,6 +536,178 @@ ul {
     .form_btn {
         margin: 0;
     }
+}
+
+.about-us {
+    background-color: #dfdfdf;
+    padding: 0 1rem;
+}
+
+.about-us__title {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about-us_name {
+    font-size: 1.5rem;
+}
+
+.about-us_bottom {
+    text-align: center;
+}
+
+.about-us_bottom .about-us_bottom_t {
+    border-bottom: none;
+}
+
+.professions__block {
+    padding: 1rem;
+}
+
+.professions__block-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .professions__block-top {
+        display: block;
+    }
+}
+
+.professions__block-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .professions__block-bottom {
+        display: block;
+    }
+}
+
+.professions__col-left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .professions__col-left {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.professions__col-rigth {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .professions__col-rigth {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .col_img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .no_text {
+        display: none;
+    }
+}
+
+.professions__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.p__item {
+    border: 1px solid #0d6efd;
+    padding: 3rem 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    box-shadow: 5px 4px 4px 1px rgba(0, 0, 0, 0.2);
+    flex: 0 1 30%;
+    text-align: center;
+}
+
+.p__item a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .p__item {
+        padding: 2rem 1rem;
+    }
+}
+
+.p__img {
+    width: 80%;
+}
+
+.footer {
+    background-color: #242424;
+}
+
+.footer-top {
+    padding: 1rem;
+}
+
+.footer-menu__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-menu__item {
+    margin: 0 0.3rem;
+}
+
+.footer-menu__title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-info__item {
+    margin: 1rem 0;
+}
+
+.footer-navigation__item {
+    margin: 0.9rem 0;
+}
+
+.footer-inner__item {
+    margin: 1rem 0;
+}
+
+.footer-docs__item {
+    margin: 1rem 0;
+}
+
+.page_service {
+    flex: 1 1 auto;
+    background-color: #0d6efd;
 }
 
 .page_service {
