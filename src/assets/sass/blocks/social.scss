@@ -1,3 +1,21 @@
 .social__icon {
-    fill: #aaaaaa;
+    width: 30px;
+    height: 30px;
+    fill: #bbbbbb;
+
+    transition: fill .1s linear;
+}
+
+.social__link {
+    &:hover .social__icon {
+        fill: rgb(245, 245, 245);
+    }
+}
+
+.vk {
+    height: 27px;
+}
+
+.youtube {
+    height: 27px;
 }

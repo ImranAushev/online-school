@@ -1,0 +1,123 @@
+.training__container {
+    padding: 0 2em;
+}
+
+.training__slider {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        background: $while url("../img/training/ajax-loader.gif") center no-repeat;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    &.slick-initialized {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.training-bottom {
+    position: relative;
+}
+
+.training__item {
+    background-color: #000;
+    overflow: hidden;
+    max-width: 373px;
+
+    position: relative;
+
+    &:hover {
+        .training__img {
+            opacity: .3;
+        }
+
+        .training__title {
+            transform: translateY(0);
+        }
+    }
+}
+
+.training__link {
+    display: block;
+}
+
+.training__img {
+    display: block;
+
+    max-height: 250px;
+
+    transition: opacity .1s linear;
+}
+
+.training__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+
+    padding: 1rem;
+
+    font-size: 1.6rem;
+    color: $while;
+
+    pointer-events: none;
+    transform: translateY(100%);
+    transition: transform .3s linear;
+}
+
+.training__arrow {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+
+    &:hover {
+        .training__arrow--icon {
+            fill: $black;
+        }
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &--prev {
+        left: -3rem;
+
+        transform: translateY(-50%)
+        rotate(180deg);
+    }
+
+    &--next {
+        right: -3rem;
+
+        transform: translateY(-50%);
+    }
+}
+
+.training__arrow--icon {
+    width: 40px;
+    height: 40px;
+
+    fill: #a3a3a3;
+
+    transition: fill .1s linear;
+}
