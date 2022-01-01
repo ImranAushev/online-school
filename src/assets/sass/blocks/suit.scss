@@ -1,0 +1,45 @@
+.suit-container {
+    padding: 3rem 1rem;
+}
+
+.suit__title {
+    padding: 1rem 0;
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+.suit__bottom {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $blue;
+}
+
+.suit__blocks {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        display: block;
+
+        padding: 0 1rem;
+    }
+}
+
+.suit__block {
+    padding: 0 1rem;
+}
+
+.suit__top {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+
+    padding: 0 0 1rem 0;
+}
+
+.suit__bottom {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 300;
+}

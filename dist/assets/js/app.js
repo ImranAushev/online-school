@@ -3014,11 +3014,28 @@ $(function() {
     let training = $("#training");
     
     training.slick({
-        arrows: false,
-        dots: true,
-        speed: 800,
         slidesToShow: 3,
-        slidesToScroll: 2
+        slidesToScroll: 1,
+        // autoplay: true,
+        // autoplaySpeed: 1000,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+              slidesToShow: 2,
+              centerMode: false,
+              slidesToScroll: 1
+              }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                slidesToShow: 1,
+                centerMode: false,
+                slidesToScroll: 1
+                }
+              }
+           ]
     });
     
     
@@ -3036,7 +3053,19 @@ $(function() {
     $(document).ready(function () {
         $('.mn-header__burger').click(function(event) {
             $('.mn-header__burger, .mn-header__block_menu').toggleClass('active');
-            $('body').toggleClass('lock');
+            // $('body').toggleClass('lock');
         })
     })
+    $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+            //забираем идентификатор бока с атрибута href
+            var id  = $(this).attr('href'),
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top}, 1000);
+        });
+    });
 });

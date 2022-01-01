@@ -1,5 +1,23 @@
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
 .training__container {
-    padding: 0 2em;
+    padding: 2rem 2em;
+
+    @media (max-width: 768px) {
+        padding: 1rem 2em;
+    }
+}
+
+.training-top {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.training-bottom {
+    padding: 1.5rem 0;
 }
 
 .training__slider {
@@ -33,7 +51,7 @@
 }
 
 .training__item {
-    background-color: #000;
+    background-color: rgb(3, 3, 3);
     overflow: hidden;
     max-width: 373px;
 
@@ -77,6 +95,10 @@
     pointer-events: none;
     transform: translateY(100%);
     transition: transform .3s linear;
+
+    @media (max-width: 520px) {
+        transform: translateY(0);
+    }
 }
 
 .training__arrow {
@@ -120,4 +142,13 @@
     fill: #a3a3a3;
 
     transition: fill .1s linear;
+}
+
+.training__text {
+    background-color: rgb(248, 248, 248);
+    color: $black;
+}
+
+.training__title {
+    margin: 0 0 1rem 0;
 }

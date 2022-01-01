@@ -64,7 +64,7 @@
                         <div class="mn-header__row">
                 
                             <div class="mn-header__block_logo_and_cources  mn-header__block">
-                                <a class="mn-header__logo" href="#">Agile<span class="abb">Dev</span></a>
+                                <a class="mn-header__logo" href="index.html">Agile<span class="abb">Dev</span></a>
                                 <div class="mn-header__btn  btn">все курсы</div>
                             </div>
                     
@@ -73,18 +73,18 @@
                             </div>
                     
                             <nav class="mn-header__block_menu  mn-header__block">
-                                <ul class="mn-header__block_menu_list">
+                                <ul class="mn-header__block_menu_list" id="menu">
                                     <li class="mn-header__block_menu_item mn-header__about">
-                                        <a class="#" href="#">О нас</a>
+                                        <a class="mn-header__about_link" href="#ex4">О нас</a>
                                     </li>
                                     <li class="mn-header__block_menu_item mn-header__contacts">
-                                        <a class="#" href="#">Контакты</a>
+                                        <a class="mn-header__about_link" href="#ex6">Контакты</a>
                                     </li>
                                     <li class="mn-header__block_menu_item mn-header__cources">
-                                        <a class="#" href="#">Видеокурсы</a>
+                                        <a class="mn-header__about_link" href="services.html">Видеокурсы</a>
                                     </li>
                                     <li class="mn-header__block_menu_item mn-header__user">
-                                        <a class="#" href="#">Войти</a>
+                                        <a class="mn-header__about_link" href="#">Войти</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -97,7 +97,7 @@
         
                 
                 <main class="main">
-                    <section class="fs">
+                    <section class="fs" id="ex1">
                 
                         <div class="content">
                             <div class="fs__top_content">
@@ -105,7 +105,7 @@
                 
                                 <div class="fs__blocks">
                                     <h1 class="fs__h1">Онлайн-<span class="name__school">школа AgileDev</span></h1>
-                                    <p class="fs__text">Цель <span class="name__school">AgileDev</span> - дать возможность каждому быть востребованным специалистом прямо сейчас. Вне зависимости от возраста и географии</p>
+                                    <p class="fs__text">Цель <span class="name__school">AgileDev</span> - дать возможность каждому, быть востребованным специалистом прямо сейчас. Вне зависимости от возраста и географии</p>
                                     <nav class="fs__directions">Наши направления
                                         <ul class="fs__list">
                                             <li class="fs__item"><a href="#">Frontend</a></li>
@@ -131,6 +131,16 @@
                 
                     </section>
                 
+                    <section class="block_frontend">
+                        <div class="content">
+                            <div class="block_frontend__text">
+                                <div class="frontend__text">
+                                    Frontend-разработчик отвечает за внешний вид сайта или мобильного приложения: он верстает шаблоны, красиво оформляет текст и изображения, улучшает взаимодействие пользователя с интерфейсом. Без frontend-разработчика не получится создать удобный цифровой продукт.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
                     <section class="training">
                         <div class="content">
                 
@@ -153,10 +163,14 @@
                                         <div>
                                             <div class="training__item">
                                                 <a class="training__link" href="#" target="_blank">
-                                                    <img class="training__img" src="./assets/img/training/img-slick-slider1.jpg" alt="111">
+                                                    <img class="training__img" src="./assets/img/training/layout.jpg" alt="layout">
                                                 </a>
                                                 <div class="training__title">
-                                                    Верстать сайты правильно
+                                                    <h4>Веб-верстка</h4>
+                                                    Вы познакомитесь с HTML и CSS, кросс-браузерной и адаптивной вёрсткой.
+                                                </div>
+                                                <div class="training__text">
+                                                    1
                                                 </div>
                                             </div>
                                         </div>
@@ -164,10 +178,14 @@
                                         <div>
                                             <div class="training__item">
                                                 <a class="training__link" href="#" target="_blank">
-                                                    <img class="training__img" src="./assets/img/training/imgonline-com-ua-Resize-bJCMKV7wK17.jpg" alt="111">
+                                                    <img class="training__img" src="./assets/img/training/js.jpg" alt="Javascript">
                                                 </a>
                                                 <div class="training__title">
-                                                    Программировать на JavaScript
+                                                    <h4>JavaScript</h4>
+                                                    Научитесь работать с переменными и числами, изучите массивы, циклы, объекты и функции.
+                                                </div>
+                                                <div class="training__text">
+                                                    2
                                                 </div>
                                             </div>
                                         </div>
@@ -175,10 +193,14 @@
                                         <div>
                                             <div class="training__item">
                                                 <a class="training__link" href="#" target="_blank">
-                                                    <img class="training__img" src="./assets/img/training/img-slick-slider1.jpg" alt="111">
+                                                    <img class="training__img" src="./assets/img/training/img-slick-slider1.jpg" alt="3">
                                                 </a>
                                                 <div class="training__title">
-                                                    Работать с современными фреймворками
+                                                    <h4>Библиотека ReactJS</h4>
+                                                    Научитесь работать с ReactJS. Сможете применять ECMAScript 6 и использовать концепцию Flux
+                                                </div>
+                                                <div class="training__text">
+                                                    3
                                                 </div>
                                             </div>
                                         </div>
@@ -186,10 +208,44 @@
                                         <div>
                                             <div class="training__item">
                                                 <a class="training__link" href="#" target="_blank">
-                                                    <img class="training__img" src="./assets/img/training/imgonline-com-ua-Resize-bJCMKV7wK17.jpg" alt="111">
+                                                    <img class="training__img" src="./assets/img/training/css.jpg"  alt="4">
                                                 </a>
                                                 <div class="training__title">
-                                                    Работать с Git
+                                                    <h4>Система контроля версий Git</h4>
+                                                    Вы научитесь работать в команде, откатывать свой проект, сравнивать, анализировать изменения в репозиторий
+                                                </div>
+                                                <div class="training__text">
+                                                    4
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div>
+                                            <div class="training__item">
+                                                <a class="training__link" href="#" target="_blank">
+                                                    <img class="training__img" src="./assets/img/training/css.jpg" alt="5">
+                                                </a>
+                                                <div class="training__title">
+                                                    <h4>Linux. Рабочая станция</h4>
+                                                    Настройка интерфейса командной строки. Управление пользователями и группами
+                                                </div>
+                                                <div class="training__text">
+                                                    5
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div>
+                                            <div class="training__item">
+                                                <a class="training__link" href="#" target="_blank">
+                                                    <img class="training__img" src="./assets/img/training/imgonline-com-ua-Resize-bJCMKV7wK17.jpg" alt="6">
+                                                </a>
+                                                <div class="training__title">
+                                                    <h4>Дипломный проект</h4>
+                                                    Практика
+                                                </div>
+                                                <div class="training__text">
+                                                    6
                                                 </div>
                                             </div>
                                         </div>
@@ -198,6 +254,52 @@
                             </div>
                 
                         </div> 
+                    </section>
+                
+                    <div class="suit">
+                        <div class="content">
+                            <div class="suit-container">
+                                <h2 class="suit__title">Кому подойдет курс</h2>
+                                <div class="suit__blocks">
+                                    <div class="suit__block">
+                                        <div class="suit__top">Новичкам</div>
+                                        <div class="suit__bottom">Поможем начать карьеру frontend-разработчика, научим создавать сайты и удобные интерфейсы.</div>
+                                    </div>
+                                    <div class="suit__block">
+                                        <div class="suit__top">Начинающим веб-разработчикам</div>
+                                        <div class="suit__bottom">Поможем ускорить карьерный рост: Вы получите новый опыт работы с HTML, CSS, JavaScript и ReactJS.</div>
+                                    </div>
+                                    <div class="suit__block">
+                                        <div class="suit__top">Практикующим IT-специалистам</div>
+                                        <div class="suit__bottom">Поможем перейти в перспективное направление, чтобы заниматься любимым делом и больше зарабатывать.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <section class="about-us" id="ex4">
+                        <div class="content">
+                            <div class="about-us__top">
+                
+                                <div class="about-us__title">О нас</div>
+                    
+                                <div class="about-us__content">
+                                    <p class="about-us__content-top">
+                                        <span class="name__school  about-us_name">AgileDev</span> - основана специалистами, которые на протяжении 7 лет работают в одних из самых известных компаниях.
+                                    </p>
+                                    <p class="about-us__content-bottom">
+                                        Благодаря огромному опыту работы, выработали методику обучения, которая позволяет каждому нашему ученику, как новичку, так и людям с опытом, стать восстребованным специалистом в той или иной профессии по окончанию обучения в школе <span class="name__school">AgileDev</span>
+                                    </p>
+                                </div>
+                    
+                                <div class="fs__bottom_content  about-us_bottom">
+                                    <div class="fs__bottom_text  about-us_bottom_t">
+                                        Более 4000 учеников успешно прошли обучение
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 
                     <section class="profesions">
@@ -231,30 +333,6 @@
                                         <img  class="p__img" src="./assets/img/JavaScript.png" alt="JavaScript">
                                     </div>
                 
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                
-                    <section class="about-us">
-                        <div class="content">
-                            <div class="about-us__top">
-                
-                                <div class="about-us__title">О нас</div>
-                    
-                                <div class="about-us__content">
-                                    <p class="about-us__content-top">
-                                        <span class="name__school  about-us_name">AgileDev</span> - основана специалистами, которые на протяжении 7 лет работают в одних из самых известных компаниях.
-                                    </p>
-                                    <p class="about-us__content-bottom">
-                                        Благодаря огромному опыту работы, выработали методику обучения, которая позволяет каждому нашему ученику, как новичку, так и людям с опытом, стать восстребованным специалистом в той или иной профессии по окончанию обучения в школе <span class="name__school">AgileDev</span>
-                                    </p>
-                                </div>
-                    
-                                <div class="fs__bottom_content  about-us_bottom">
-                                    <div class="fs__bottom_text  about-us_bottom_t">
-                                        Более 4000 учеников успешно прошли обучение
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -296,7 +374,7 @@
                                         </div>
                                         <div class="price__duration">
                                             <span class="price__mount">Длительность:</span></br>
-                                            
+                                            <span class="price__long">8 месяцев</span>
                                         </div> 
                                     </div>
                         
@@ -327,7 +405,7 @@
                                         </ul>
                                         <div class="form_block_btn_and_text">
                                             <button class="form_btn" type="submit">Записаться</button>
-                                            <p class="text">Нажав на кнпку Вы соглашаетесь с <a href="#">политикой конфидициальности</a> и <a href="#">правилами использования платформы</a></a></p>
+                                            <p class="text">Нажав на кнопку Вы соглашаетесь с <a href="#">политикой конфидициальности</a> и <a href="#">правилами использования платформы</a></a></p>
                                         </div>
                                     </form>
                                 
@@ -337,11 +415,62 @@
                         </div>
                     </section>
                 
+                    <section class="companii">
+                        <div class="content">
+                            <h4>
+                                Компании, в которых работают выпускники
+                            </h4>
+                        </div>
+                    </section>
+                
+                    <section class="questions">
+                        <div class="content">
+                
+                            <div class="questions-top">
+                                <h2 class="questions__title">Часто задаваемые вопросы</h2>
+                
+                                <ul class="details">
+                                    <li class="details__item">
+                                        <details class="details__container">
+                                            <summary class="details__sammary">Что необходимо для обучения в <span class="name-school">AgileDev</span></summary>
+                                            <p class="details__text">Для прохождения обучения Вам потребуется стабильный интернет и компьютер (ноутбук)</p>
+                                        </details>
+                                    </li>
+                                    <li class="details__item">
+                                        <details class="details__container">
+                                            <summary class="details__sammary">Можно ли совмешать обучение с работой или учебой в университете? </summary>
+                                            <p class="details__text">Наши курсы спроектированы так, чтобы ученик мог заниматься в свободное время. Все записи и материалы у нас доступны в личном кабинете.</p>
+                                        </details>
+                                    </li>
+                                    <li class="details__item">
+                                        <details class="details__container">
+                                            <summary class="details__sammary">Я никогда не программировал. У меня получится?</summary>
+                                            <p class="details__text">Конечно! Для этого небходимо своевременно проходить домашнее задание. Также Вас будут курировать опытные наставники на протяжении курса.</p>
+                                        </details>
+                                    </li>
+                                    <li class="details__item">
+                                        <details class="details__container">
+                                            <summary class="details__sammary">Предусмотрен ли возврат денег, если я передумаю проходить курс или профессию?</summary>
+                                            <p class="details__text">Да, возврат возможен не позднее 3-го дня с момента старта обучения.</p>
+                                        </details>
+                                    </li>
+                                    <li class="details__item">
+                                        <details class="details__container">
+                                            <summary class="details__sammary">Сколько часов в неделю мне нужно будет уделять учёбе?</summary>
+                                            <p class="details__text">Всё зависит только от Вас. Наши студенты занимаются от трёх до пяти часов в неделю.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                        </div>
+                    </section>
+                
                 </main>
         
             <!-- Footer -->
     
-                <footer class="footer">
+                <footer class="footer" id="ex6">
                     <div class="content">
                         <div class="footer-top">
                             <ul class="footer-menu__list">

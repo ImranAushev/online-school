@@ -10,10 +10,10 @@
 }
 
 .price-col {
-    width: 50%;
+    width: 41%;
 
     padding: 1rem;
-    margin: 1rem;
+    margin: 2rem 1rem;
 
     background-color: $while;
     border-radius: 1rem;
@@ -26,6 +26,18 @@
 
 
 .p_form {
-    background-color: $blue;
+    background-color: #202733;
 }
 
+
+.price__duration {
+    display: flex;
+}
+
+.price__mount {
+    padding: 0 .7rem 0 0;
+}
+
+.price__long {
+    font-size: 1.2rem;
+}

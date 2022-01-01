@@ -1,0 +1,31 @@
+.block_frontend {
+    background-color: #202733;
+}
+
+.block_frontend__text {
+    width: 100%;
+    padding: 1rem;
+
+    @media (max-width: 768px) {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.frontend__text {
+    color: rgb(243, 243, 243);
+    font-size: 2rem;
+    line-height: 48px;
+    font-weight: 600;
+
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    @media (max-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        font-size: 1rem;
+        line-height: 2rem
+    }
+}

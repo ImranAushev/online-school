@@ -1,0 +1,27 @@
+.videocource {
+    height: 55vh;
+}
+
+.videocource__row {
+    padding: 1rem 1rem;
+}
+
+.videocource__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.videocource__blocks {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.videocource__block {
+    margin: 2rem 0;
+    border: 1px solid $black;
+    padding: 4rem;
+}
