@@ -5,10 +5,16 @@
 .companies__title {
     text-align: center;
 
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 600;
 
-    padding: 1rem 0;
+    padding: 3.3rem 0 2.3rem 0;
+
+    @media (max-width: 520px) {
+        font-size: 2rem;
+
+        padding: 1.3rem 0 2.3rem 0;
+    }
 }
 
 .companies__list {
@@ -19,4 +25,15 @@
 
     margin: 0 auto;
     padding: 2rem 0;
+
+    @media (max-width: 768px) {
+        padding: 0;
+        line-height: 0;
+    }
+}
+
+.svg_el {
+    @media (max-width: 520px) {
+        height: 130px;
+    }
 }
