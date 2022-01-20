@@ -1101,6 +1101,26 @@ details[open] .dropdown-menu {
     padding: 4rem;
 }
 
+.companies__body {
+    background-color: #e2e2e2;
+}
+
+.companies__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.companies__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
 .page_service {
     flex: 1 1 auto;
     background-color: #0d6efd;
