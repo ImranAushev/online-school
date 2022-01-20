@@ -1,10 +1,12 @@
 let training = $("#training");
 
 training.slick({
+
+    centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     responsive: [
         {
           breakpoint: 768,

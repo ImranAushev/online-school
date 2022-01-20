@@ -859,7 +859,7 @@ h4 {
 
 .training__slider {
     position: relative;
-    height: 270px;
+    height: 275px;
     overflow: hidden;
 }
 
@@ -884,10 +884,17 @@ h4 {
 }
 
 .training__item {
+    position: relative;
     background-color: #030303;
     overflow: hidden;
     max-width: 373px;
-    position: relative;
+    border: 2px solid #b8b8b8;
+}
+
+@media (max-width: 520px) {
+    .training__item .training__img {
+        opacity: 0.3;
+    }
 }
 
 .training__item:hover .training__img {
@@ -905,7 +912,12 @@ h4 {
 .training__img {
     display: block;
     max-height: 250px;
+    min-height: 250px;
     transition: opacity 0.1s linear;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .training__title {
@@ -914,7 +926,6 @@ h4 {
     left: 0;
     z-index: 1;
     width: 100%;
-    padding: 1rem;
     font-size: 1.6rem;
     color: #fff;
     pointer-events: none;
@@ -925,6 +936,9 @@ h4 {
 @media (max-width: 520px) {
     .training__title {
         transform: translateY(0);
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        padding: 0 0 1rem 0.3rem;
     }
 }
 
@@ -965,7 +979,8 @@ h4 {
 
 .training__text {
     background-color: #f8f8f8;
-    color: #242424;
+    color: #f8f8f8;
+    line-height: 1;
 }
 
 .training__title {
