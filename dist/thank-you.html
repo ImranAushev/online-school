@@ -29,7 +29,7 @@
     
     
     
-    <title>layout</title>
+    <title></title>
 
 </head>
 <body>
@@ -193,141 +193,45 @@
     
             <!-- Content -->
         
+                <!DOCTYPE html>
+                <html lang="ru">
+                  <head>
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                    <meta name="description" content="">
+                    <meta name="author" content="">
+                    <link rel="icon" href="/favicon.ico">
+                
+                    <title>Отправка формы на почту </title>
+                
+                    <!-- Bootstrap core CSS -->
+                    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+                  </head>
+                <style>
+                  h1 {
+                    color: #2233a5;
+                  }
+                </style>
+                  <body>
+                    <div class="container">
+                
+                      <h1 class="text-center">Спасибо! Ваш заявка принята, мы свяжемся с Вами в течении 10 мин</h1>
+                
+                    </div><!-- /.container -->
                 
                 
-                <div class="layout">
-                    <div class="layout__bg" style="background: 100% url(assets/img/bg_layout.jpg);">
-                        <div class="content">
-                            <div class="layout__first-block  first-block">
-                
-                                <div class="layout__col  col__left">
-                                    <h5 class="layout__title--small">Онлайн курс</h5>
-                                    <h3 class="layout__title--big">HTML и CSS <br><span>Профессиональная верстка сайтов</span></h3>
-                                    <div class="layout__data">01.02.2022 - 20.03.2022</div>
-                                    <div class="desc">Курс разработан для тех, кто хочет сменить профессию и стать высокооплачиваемым профессионалом. Он подойдёт для работающих людей, у которых мало времени.</div>
-                                </div>
-                    
-                                <div class="layout__col  col__right">
-                                    <form class="layout__form" action="mail.php" method="POST" onsubmit="send(event, 'mail.php')">
-                                    <h3 class="layout__form--title">Оставить заявку</h3>
-                                        <div className="layout__form-name  form_flexibility">
-                                          <p class="layout__form-text">ФИО</p>
-                                          <input class="layout__form-input" tabindex="1" name="user_name" type="text">
-                                        </div>
-                            
-                                        <div class="layout__form-phone  form_flexibility">
-                                          <p class="layout__form-text">Номер телефон</p>
-                                          <input class="layout__form-input" tabindex="2" name="user_phone" type="tel">
-                                        </div>
-                            
-                                        <div class="layout__form-email  form_flexibility">
-                                          <p class="layout__form-text">Электрнная почта</p>
-                                          <input class="layout__form-input" tabindex="3" name="email" type="email">
-                                        </div>
-                            
-                                        <div class="button">
-                                          <input class="btn  btn_submit" value="ОТПРАВИТЬ" type="submit">
-                                        </div>
-                            
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skills">
-                  <div class="skills__bg">
-                    <div class="content">
-                      <h3 class="skills__title">Чему Вы научитесь за 6 недель:</h3>
-                
-                      <div class="skills__blocks">
-                        <div class="skills__block">
-                
-                          <div class="skills__block-title">
-                            HTML/CSS. Интерактивный курс
-                          </div>
-                          <div class="skills__block-text">
-                            — Самостоятельно верстать сайты любой сложности с применением Flexbox и BEM-naming
-                          </div>
-                
-                        </div>
-                
-                        <div class="skills__block">
-                
-                          <div class="skills__block-title">
-                            Кроссбраузерная верстка
-                          </div>
-                          <div class="skills__block-text">
-                            — Ваша страница отлично будет работать во всех браузерах в разных ОС.
-                          </div>
-                
-                        </div>
-                
-                        <div class="skills__block">
-                
-                          <div class="skills__block-title">
-                            Работа с макетами
-                          </div>
-                          <div class="skills__block-text">
-                            — Вы научитесь рабтать с макетами с помощью простых и удобных инстрементов: Figma, Photoshop CC
-                          </div>
-                        </div>
-                        <div class="skills__block">
-                          <div class="skills__block-title">
-                            Workflow
-                          </div>
-                          <div class="skills__block-text">
-                            — Вы будете работать в идеально настроенном под Вас среде разработки: VScode, FTP-клиент
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <section class="questions" style="background-color: #b5b8b6;">
-                  <div class="content">
-                
-                      <div class="questions-top">
-                          <h2 class="questions__title">Часто задаваемые вопросы</h2>
-                
-                          <ul class="details">
-                              <li class="details__item">
-                                  <details class="details__container">
-                                      <summary class="details__sammary">Что необходимо для обучения в <span class="name-school">AgileDev</span></summary>
-                                      <p class="details__text">Для прохождения обучения Вам потребуется стабильный интернет и компьютер (ноутбук)</p>
-                                  </details>
-                              </li>
-                              <li class="details__item">
-                                  <details class="details__container">
-                                      <summary class="details__sammary">Можно ли совмешать обучение с работой или учебой в университете? </summary>
-                                      <p class="details__text">Наши курсы спроектированы так, чтобы ученик мог заниматься в свободное время. Все записи и материалы у нас доступны в личном кабинете.</p>
-                                  </details>
-                              </li>
-                              <li class="details__item">
-                                  <details class="details__container">
-                                      <summary class="details__sammary">Я никогда не программировал. У меня получится?</summary>
-                                      <p class="details__text">Конечно! Для этого небходимо своевременно проходить домашнее задание. Также Вас будут курировать опытные наставники на протяжении курса.</p>
-                                  </details>
-                              </li>
-                              <li class="details__item">
-                                  <details class="details__container">
-                                      <summary class="details__sammary">Предусмотрен ли возврат денег, если я передумаю проходить курс или профессию?</summary>
-                                      <p class="details__text">Да, возврат возможен не позднее 3-го дня с момента старта обучения.</p>
-                                  </details>
-                              </li>
-                              <li class="details__item">
-                                  <details class="details__container">
-                                      <summary class="details__sammary">Сколько часов в неделю мне нужно будет уделять учёбе?</summary>
-                                      <p class="details__text">Всё зависит только от Вас. Наши студенты занимаются от трёх до пяти часов в неделю.</p>
-                                  </details>
-                              </li>
-                          </ul>
-                      </div>
-                
-                  </div>
-                </section>
+                    <!-- Bootstrap core JavaScript
+                    ================================================== -->
+                    <!-- Placed at the end of the document so the pages load faster -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+                    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+                  </body>
+                </html>
+                	
         
             <!-- Footer -->
     
