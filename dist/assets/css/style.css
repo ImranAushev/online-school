@@ -1226,21 +1226,27 @@ details[open] .dropdown-menu {
     padding: 3rem 1rem;
 }
 
+@media (max-width: 768px) {
+    .first-block {
+        display: block;
+    }
+}
+
 .col__left {
-    width: 50%;
+    max-width: 50%;
     padding: 0 0.5rem 0 0;
 }
 
-.col__right {
-    width: 50%;
-    padding: 0 0 0 0.5rem;
-    margin: 0 auto;
+@media (max-width: 768px) {
+    .col__left {
+        max-width: 100%;
+        padding-bottom: 2.8rem;
+    }
 }
 
-@media (max-width: 1024px) {
-    .col__right {
-        width: 100%;
-    }
+.col__right {
+    padding: 0 0 0 0.5rem;
+    margin: 0 auto;
 }
 
 .layout__col {
@@ -1248,50 +1254,62 @@ details[open] .dropdown-menu {
 }
 
 .layout__title--small {
+    font-size: 1.4rem;
     margin-bottom: 0.4rem;
 }
 
 .layout__title--big {
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-top: 0.7rem;
 }
 
 .layout__data {
+    text-align: center;
+    font-size: 1.4rem;
     margin: 1.5rem 0;
     font-style: italic;
+    background-color: #6f809a;
 }
 
-.form {
-    width: 40%;
-    text-align: center;
+.desc {
+    font-size: 1.2rem;
+}
+
+.layout__form {
+    max-width: 230px;
     background-color: #fff;
-    opacity: 1;
-    border-radius: 0.6rem;
     color: #242424;
-    padding: 1rem 0;
-    margin: 0 auto;
+    padding: 20px 25px;
+    border-radius: 10px;
 }
 
-.form__text {
-    margin: 0.5rem 0;
+.layout__form--title {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #0d6efd;
+    text-transform: uppercase;
 }
 
-.form__input {
-    border: 1px solid #e2e2e2;
-    height: 2rem;
+.layout__form-input {
+    border: none;
+    background-color: #e6e4e4;
+    height: 36px;
+    border-radius: 5px;
+    padding: 0px 26px;
 }
 
-.form__email {
-    margin: 1rem 0;
+.layout__form-text {
+    margin: 5px 11px;
 }
 
 .btn_submit {
+    width: 100%;
     border: none;
     background-color: #0d6efd;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 0.3rem;
-    width: 90%;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 1.5rem 0 0 0;
 }
 
 .page_service {

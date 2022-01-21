@@ -208,25 +208,25 @@
                                 </div>
                     
                                 <div class="layout__col  col__right">
-                                    <form class="form" action="mail.php" method="POST" onsubmit="send(event, 'mail.php')">
-                                    
-                                        <div className="form__name  form_flexibility">
-                                          <p class="form__text">Фамилие Имя Отчество</p>
-                                          <input class="form__input" tabindex="1" name="user_name" type="text" placeholder="ФИО">
+                                    <form class="layout__form" action="mail.php" method="POST" onsubmit="send(event, 'mail.php')">
+                                    <h3 class="layout__form--title">Оставить заявку</h3>
+                                        <div className="layout__form-name  form_flexibility">
+                                          <p class="layout__form-text">ФИО</p>
+                                          <input class="layout__form-input" tabindex="1" name="user_name" type="text">
                                         </div>
                             
-                                        <div class="form__phone  form_flexibility">
-                                          <p class="form__text">Номер телефон</p>
-                                          <input class="form__input" tabindex="2" name="user_phone" type="tel" placeholder="+7 9XX XXX XX XX">
+                                        <div class="layout__form-phone  form_flexibility">
+                                          <p class="layout__form-text">Номер телефон</p>
+                                          <input class="layout__form-input" tabindex="2" name="user_phone" type="tel">
                                         </div>
                             
-                                        <div class="form__email  form_flexibility">
-                                          <p class="form__text">Электрнная почта</p>
-                                          <input class="form__input" tabindex="3" name="email" type="email" placeholder="username@mail.ru">
+                                        <div class="layout__form-email  form_flexibility">
+                                          <p class="layout__form-text">Электрнная почта</p>
+                                          <input class="layout__form-input" tabindex="3" name="email" type="email">
                                         </div>
                             
                                         <div class="button">
-                                          <input class="btn  btn_submit" value="ЗАПИСАТЬСЯ" type="submit">
+                                          <input class="btn  btn_submit" value="ОТПРАВИТЬ" type="submit">
                                         </div>
                             
                                     </form>
