@@ -3055,13 +3055,14 @@ $(function() {
     $(document).ready(function () {
         $('.mn-header__burger').click(function(event) {
             $('.mn-header__burger, .mn-header__block_menu').toggleClass('active');
-            // $('body').toggleClass('lock');
+        });
+    
+        $('.mn-header__btn').click(function(event) {
+            $('.mn-header__btn, .mn-header__mac_list').toggleClass('active');
         })
     })
     $(document).ready(function(){
         $("#menu").on("click","a", function (event) {
-            //отменяем стандартную обработку нажатия по ссылке
-            event.preventDefault();
             //забираем идентификатор бока с атрибута href
             var id  = $(this).attr('href'),
             //узнаем высоту от начала страницы до блока на который ссылается якорь

@@ -152,12 +152,16 @@ h4 {
 }
 
 .training__arrow--icon {
-    width: 40px;
+    width: 45px;
     height: 40px;
 
     fill: #a3a3a3;
 
     transition: fill .1s linear;
+
+    @media (max-width: 520px) {
+        width: 55px;
+    }
 }
 
 .training__text {

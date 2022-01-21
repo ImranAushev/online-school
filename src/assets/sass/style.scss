@@ -31,6 +31,10 @@ ul {
     list-style: none;
 }
 
+.abb {
+    color: $blue;
+}
+
 // *,
 // *:before,
 // *:after {
@@ -74,6 +78,8 @@ ul {
 @import './blocks/videocource.scss';
 
 @import './blocks/companies.scss';
+
+@import './blocks/menu-all-cources.scss';
 
 @import './blocks/services.scss';
 
