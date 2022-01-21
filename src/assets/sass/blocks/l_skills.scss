@@ -1,0 +1,27 @@
+.skills__title {
+    font-size: 1.8rem;
+}
+
+.skills__block-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    color: $blue;
+
+    padding: 1rem 0;
+}
+
+.skills__blocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills__block {
+    margin: .4rem;
+    padding: .4rem;
+
+    flex-basis: 23%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
